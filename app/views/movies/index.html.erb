@@ -1,8 +1,12 @@
+
+
 <h1>Movie Index</h1>
 
 <div>
 <% @movies.each do |movie| %>
-    <div> <%= movie.title %> </div>
+    <div> <strong> <%= movie.title %> </strong></div>
     <div> <%= movie.year %> </div>
+    <div> <%= movie.rating %> </div>
+    <br />
     <% end %>
 </div>
