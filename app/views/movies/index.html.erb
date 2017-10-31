@@ -1,3 +1,4 @@
+<p id="notice"><%= notice %></p>
 
 
 <h1>Movie Index</h1>
@@ -5,8 +6,14 @@
 <div>
 <% @movies.each do |movie| %>
     <div> <strong> <%= movie.title %> </strong></div>
-    <div> <%= movie.year %> </div>
-    <div> <%= movie.rating %> </div>
+    <div> Released: <%= movie.year %> </div>
+    <div>  <%=movie.rating %> </div>
+    <div> <%= image_tag "#{movie.poster}" %> </div>
     <br />
+   <div> <%= button_to "Delete", @movie, :method => :delete %> </div>
+    <%#   <%= button_to 'Destroy', { controller: :movies, action: :destroy, id: 'movie_id' }, method: :delete, data: { confirm: 'Are you sure?' } %>
+    
+    <hr />
+
     <% end %>
 </div>

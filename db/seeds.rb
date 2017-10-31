@@ -25,18 +25,30 @@ users << User.create(
 )
 
 
+movies << Movie.create(
+    omdb_id: 'tt0113228'
+)
+
+movies << Movie.create(
+    omdb_id: 'tt0100944'
+)
 
 movies << Movie.create(
     omdb_id: 'tt0083658'
 )
 
 movies << Movie.create(
-    omdb_id: 'tt2294629'
+    omdb_id: 'tt0108526'
 )
 
 movies << Movie.create(
-    omdb_id: 'tt0119081'
+    omdb_id: 'tt0095925'
 )
+movies << Movie.create(
+    omdb_id: 'tt0087332'
+)
+
+
 
 
 users.each do |user|
